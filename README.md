@@ -263,7 +263,7 @@ The application will be accessible at `http://localhost:8501`
 
 ## Deployment
 
-**Production URL:** 
+**Production URL:** [To be added upon deployment]
 
 **Deployment Platform:** Streamlit Cloud  
 **Deployment Process:**
@@ -334,7 +334,7 @@ This project was developed with assistance from Claude (Anthropic), an AI assist
 - Documentation formatting and academic writing conventions
 - Code optimization and debugging support
 
-Claude served as a technical consultation resource similar to office hours or tutoring support.
+Claude served as a technical consultation resource similar to office hours or tutoring support. All conceptual framework decisions, data analysis interpretations, research insights, and academic content were developed independently by the author.
 
 ## License
 

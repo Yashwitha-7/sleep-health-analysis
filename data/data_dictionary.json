@@ -1,0 +1,125 @@
+{
+  "Person ID": {
+    "type": "Integer",
+    "description": "Unique identifier for each individual",
+    "range": "1-374"
+  },
+  "Gender": {
+    "type": "Categorical",
+    "description": "Biological sex of the individual",
+    "categories": [
+      "Male",
+      "Female"
+    ]
+  },
+  "Age": {
+    "type": "Integer",
+    "description": "Age of the individual in years",
+    "range": "27-59",
+    "mean": "42.2"
+  },
+  "Occupation": {
+    "type": "Categorical",
+    "description": "Current profession or job role",
+    "categories": [
+      "Software Engineer",
+      "Doctor",
+      "Sales Representative",
+      "Teacher",
+      "Nurse",
+      "Engineer",
+      "Accountant",
+      "Scientist",
+      "Lawyer",
+      "Salesperson",
+      "Manager"
+    ]
+  },
+  "Sleep Duration": {
+    "type": "Float",
+    "description": "Average hours of sleep per night",
+    "range": "5.8-8.5",
+    "mean": "7.13",
+    "unit": "hours"
+  },
+  "Quality of Sleep": {
+    "type": "Integer",
+    "description": "Subjective sleep quality rating",
+    "range": "4-9",
+    "scale": "1-10 (higher is better)"
+  },
+  "Physical Activity Level": {
+    "type": "Integer",
+    "description": "Daily physical activity level",
+    "range": "30-90",
+    "scale": "Minutes of activity per day"
+  },
+  "Stress Level": {
+    "type": "Integer",
+    "description": "Self-reported stress level",
+    "range": "3-8",
+    "scale": "1-10 (higher is more stress)"
+  },
+  "BMI Category": {
+    "type": "Categorical",
+    "description": "Body Mass Index category",
+    "categories": [
+      "Overweight",
+      "Normal",
+      "Obese",
+      "Normal Weight"
+    ]
+  },
+  "Blood Pressure": {
+    "type": "String",
+    "description": "Blood pressure reading (Systolic/Diastolic)",
+    "format": "XXX/XX mmHg"
+  },
+  "Heart Rate": {
+    "type": "Integer",
+    "description": "Resting heart rate",
+    "range": "65-86",
+    "unit": "beats per minute (BPM)"
+  },
+  "Daily Steps": {
+    "type": "Integer",
+    "description": "Average number of steps per day",
+    "range": "3000-10000",
+    "mean": "6817"
+  },
+  "Sleep Disorder": {
+    "type": "Categorical",
+    "description": "Diagnosed sleep disorder",
+    "categories": [
+      "None",
+      "Sleep Apnea",
+      "Insomnia"
+    ],
+    "note": "None indicates no diagnosed disorder"
+  },
+  "Systolic_BP": {
+    "type": "Integer",
+    "description": "Systolic blood pressure (extracted from Blood Pressure)",
+    "unit": "mmHg"
+  },
+  "Diastolic_BP": {
+    "type": "Integer",
+    "description": "Diastolic blood pressure (extracted from Blood Pressure)",
+    "unit": "mmHg"
+  },
+  "Sleep_Efficiency": {
+    "type": "Float",
+    "description": "Combined metric of sleep duration and quality",
+    "formula": "(Sleep Duration \u00d7 Quality of Sleep) / 10"
+  },
+  "Activity_Stress_Ratio": {
+    "type": "Float",
+    "description": "Ratio of physical activity to stress level",
+    "formula": "Physical Activity Level / (Stress Level + 1)"
+  },
+  "Sleep_Deficit": {
+    "type": "Float",
+    "description": "Difference from recommended 8 hours of sleep",
+    "formula": "8 - Sleep Duration"
+  }
+}

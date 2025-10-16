@@ -1,0 +1,417 @@
+{
+  "full_correlation": {
+    "Age": {
+      "Age": 1.0,
+      "Sleep Duration": 0.3447093581647443,
+      "Quality of Sleep": 0.4737338761619895,
+      "Physical Activity Level": 0.17899272043316286,
+      "Stress Level": -0.42234448262025065,
+      "Heart Rate": -0.2256061902985921,
+      "Daily Steps": 0.0579734029456786,
+      "Systolic_BP": 0.605878444049098,
+      "Diastolic_BP": 0.5938389204768403
+    },
+    "Sleep Duration": {
+      "Age": 0.3447093581647443,
+      "Sleep Duration": 1.0,
+      "Quality of Sleep": 0.8832130004106182,
+      "Physical Activity Level": 0.21236031472575895,
+      "Stress Level": -0.8110230278940436,
+      "Heart Rate": -0.516454888517144,
+      "Daily Steps": -0.039532537675731685,
+      "Systolic_BP": -0.1804062764300443,
+      "Diastolic_BP": -0.16656986850262198
+    },
+    "Quality of Sleep": {
+      "Age": 0.4737338761619895,
+      "Sleep Duration": 0.8832130004106182,
+      "Quality of Sleep": 1.0,
+      "Physical Activity Level": 0.19289645493975385,
+      "Stress Level": -0.8987520310040412,
+      "Heart Rate": -0.6598647331480086,
+      "Daily Steps": 0.01679141492471703,
+      "Systolic_BP": -0.12163199613350596,
+      "Diastolic_BP": -0.11015092719366548
+    },
+    "Physical Activity Level": {
+      "Age": 0.17899272043316286,
+      "Sleep Duration": 0.21236031472575895,
+      "Quality of Sleep": 0.19289645493975385,
+      "Physical Activity Level": 1.0,
+      "Stress Level": -0.034134463516743055,
+      "Heart Rate": 0.13697098321363213,
+      "Daily Steps": 0.7727230504529323,
+      "Systolic_BP": 0.2654159731612868,
+      "Diastolic_BP": 0.3826506764202612
+    },
+    "Stress Level": {
+      "Age": -0.42234448262025065,
+      "Sleep Duration": -0.8110230278940436,
+      "Quality of Sleep": -0.8987520310040412,
+      "Physical Activity Level": -0.034134463516743055,
+      "Stress Level": 1.0,
+      "Heart Rate": 0.6700264629986896,
+      "Daily Steps": 0.18682895445881678,
+      "Systolic_BP": 0.1028181586846426,
+      "Diastolic_BP": 0.09181103513868386
+    },
+    "Heart Rate": {
+      "Age": -0.2256061902985921,
+      "Sleep Duration": -0.516454888517144,
+      "Quality of Sleep": -0.6598647331480086,
+      "Physical Activity Level": 0.13697098321363213,
+      "Stress Level": 0.6700264629986896,
+      "Heart Rate": 1.0,
+      "Daily Steps": -0.030308575297108724,
+      "Systolic_BP": 0.29414292125640196,
+      "Diastolic_BP": 0.2710922189824597
+    },
+    "Daily Steps": {
+      "Age": 0.0579734029456786,
+      "Sleep Duration": -0.039532537675731685,
+      "Quality of Sleep": 0.01679141492471703,
+      "Physical Activity Level": 0.7727230504529323,
+      "Stress Level": 0.18682895445881678,
+      "Heart Rate": -0.030308575297108724,
+      "Daily Steps": 1.0,
+      "Systolic_BP": 0.10334221934166404,
+      "Diastolic_BP": 0.241985972302142
+    },
+    "Systolic_BP": {
+      "Age": 0.605878444049098,
+      "Sleep Duration": -0.1804062764300443,
+      "Quality of Sleep": -0.12163199613350596,
+      "Physical Activity Level": 0.2654159731612868,
+      "Stress Level": 0.1028181586846426,
+      "Heart Rate": 0.29414292125640196,
+      "Daily Steps": 0.10334221934166404,
+      "Systolic_BP": 1.0,
+      "Diastolic_BP": 0.9728849870932399
+    },
+    "Diastolic_BP": {
+      "Age": 0.5938389204768403,
+      "Sleep Duration": -0.16656986850262198,
+      "Quality of Sleep": -0.11015092719366548,
+      "Physical Activity Level": 0.3826506764202612,
+      "Stress Level": 0.09181103513868386,
+      "Heart Rate": 0.2710922189824597,
+      "Daily Steps": 0.241985972302142,
+      "Systolic_BP": 0.9728849870932399,
+      "Diastolic_BP": 1.0
+    }
+  },
+  "sleep_quality_correlations": {
+    "Age": 0.4737338761619895,
+    "Sleep Duration": 0.8832130004106182,
+    "Quality of Sleep": 1.0,
+    "Physical Activity Level": 0.19289645493975385,
+    "Stress Level": -0.8987520310040412,
+    "Heart Rate": -0.6598647331480086,
+    "Daily Steps": 0.01679141492471703,
+    "Systolic_BP": -0.12163199613350596,
+    "Diastolic_BP": -0.11015092719366548
+  },
+  "correlation_None": {
+    "Age": {
+      "Age": 1.0,
+      "Sleep Duration": 0.6001844782941147,
+      "Quality of Sleep": 0.7259438341841754,
+      "Physical Activity Level": -0.14093503461354884,
+      "Stress Level": -0.6671821495125202,
+      "Heart Rate": -0.5706538665536142,
+      "Daily Steps": -0.26469769611379357,
+      "Systolic_BP": 0.38724483278965194,
+      "Diastolic_BP": 0.2632839969383882
+    },
+    "Sleep Duration": {
+      "Age": 0.6001844782941147,
+      "Sleep Duration": 1.0,
+      "Quality of Sleep": 0.8369402487174625,
+      "Physical Activity Level": 0.25951816888477014,
+      "Stress Level": -0.7787611741819673,
+      "Heart Rate": -0.6783634030243453,
+      "Daily Steps": 0.0922494057166886,
+      "Systolic_BP": 0.001873794778043962,
+      "Diastolic_BP": 0.007220024410527067
+    },
+    "Quality of Sleep": {
+      "Age": 0.7259438341841754,
+      "Sleep Duration": 0.8369402487174625,
+      "Quality of Sleep": 1.0,
+      "Physical Activity Level": 0.11235100487578668,
+      "Stress Level": -0.9388816990888188,
+      "Heart Rate": -0.8097424444752187,
+      "Daily Steps": -0.01234402108382991,
+      "Systolic_BP": 0.02357814142765306,
+      "Diastolic_BP": -0.037719316743728096
+    },
+    "Physical Activity Level": {
+      "Age": -0.14093503461354884,
+      "Sleep Duration": 0.25951816888477014,
+      "Quality of Sleep": 0.11235100487578668,
+      "Physical Activity Level": 1.0,
+      "Stress Level": -0.06620541570760528,
+      "Heart Rate": 0.16411688101714209,
+      "Daily Steps": 0.7925262287957557,
+      "Systolic_BP": 0.0949511095009433,
+      "Diastolic_BP": 0.28216986716150816
+    },
+    "Stress Level": {
+      "Age": -0.6671821495125202,
+      "Sleep Duration": -0.7787611741819673,
+      "Quality of Sleep": -0.9388816990888188,
+      "Physical Activity Level": -0.06620541570760528,
+      "Stress Level": 1.0,
+      "Heart Rate": 0.8009380733853303,
+      "Daily Steps": 0.08972087179043713,
+      "Systolic_BP": 0.09039784555896839,
+      "Diastolic_BP": 0.1191700369845859
+    },
+    "Heart Rate": {
+      "Age": -0.5706538665536142,
+      "Sleep Duration": -0.6783634030243453,
+      "Quality of Sleep": -0.8097424444752187,
+      "Physical Activity Level": 0.16411688101714209,
+      "Stress Level": 0.8009380733853303,
+      "Heart Rate": 1.0,
+      "Daily Steps": 0.1835423808653868,
+      "Systolic_BP": 0.09986269583381907,
+      "Diastolic_BP": 0.19547828407486534
+    },
+    "Daily Steps": {
+      "Age": -0.26469769611379357,
+      "Sleep Duration": 0.0922494057166886,
+      "Quality of Sleep": -0.01234402108382991,
+      "Physical Activity Level": 0.7925262287957557,
+      "Stress Level": 0.08972087179043713,
+      "Heart Rate": 0.1835423808653868,
+      "Daily Steps": 1.0,
+      "Systolic_BP": 0.004689929417888422,
+      "Diastolic_BP": 0.215537360201792
+    },
+    "Systolic_BP": {
+      "Age": 0.38724483278965194,
+      "Sleep Duration": 0.001873794778043962,
+      "Quality of Sleep": 0.02357814142765306,
+      "Physical Activity Level": 0.0949511095009433,
+      "Stress Level": 0.09039784555896839,
+      "Heart Rate": 0.09986269583381907,
+      "Daily Steps": 0.004689929417888422,
+      "Systolic_BP": 1.0,
+      "Diastolic_BP": 0.9422250463985956
+    },
+    "Diastolic_BP": {
+      "Age": 0.2632839969383882,
+      "Sleep Duration": 0.007220024410527067,
+      "Quality of Sleep": -0.037719316743728096,
+      "Physical Activity Level": 0.28216986716150816,
+      "Stress Level": 0.1191700369845859,
+      "Heart Rate": 0.19547828407486534,
+      "Daily Steps": 0.215537360201792,
+      "Systolic_BP": 0.9422250463985956,
+      "Diastolic_BP": 1.0
+    }
+  },
+  "correlation_Sleep Apnea": {
+    "Age": {
+      "Age": 1.0,
+      "Sleep Duration": 0.5579551907928144,
+      "Quality of Sleep": 0.7341026478618858,
+      "Physical Activity Level": 0.6161219257963091,
+      "Stress Level": -0.5717328972817255,
+      "Heart Rate": -0.6610697745917969,
+      "Daily Steps": 0.2965606310085165,
+      "Systolic_BP": 0.6926662169813729,
+      "Diastolic_BP": 0.7897793111756619
+    },
+    "Sleep Duration": {
+      "Age": 0.5579551907928144,
+      "Sleep Duration": 1.0,
+      "Quality of Sleep": 0.9442284818470905,
+      "Physical Activity Level": -0.04331772494832054,
+      "Stress Level": -0.9840279696112854,
+      "Heart Rate": -0.5985956140006649,
+      "Daily Steps": -0.4831350293182052,
+      "Systolic_BP": 0.0942512973164911,
+      "Diastolic_BP": 0.11338049747165463
+    },
+    "Quality of Sleep": {
+      "Age": 0.7341026478618858,
+      "Sleep Duration": 0.9442284818470905,
+      "Quality of Sleep": 1.0,
+      "Physical Activity Level": 0.2139769964540251,
+      "Stress Level": -0.9453249360386455,
+      "Heart Rate": -0.7035817846717414,
+      "Daily Steps": -0.22231716938371274,
+      "Systolic_BP": 0.2281056932347731,
+      "Diastolic_BP": 0.2908269069779483
+    },
+    "Physical Activity Level": {
+      "Age": 0.6161219257963091,
+      "Sleep Duration": -0.04331772494832054,
+      "Quality of Sleep": 0.2139769964540251,
+      "Physical Activity Level": 1.0,
+      "Stress Level": 0.06757265441976958,
+      "Heart Rate": -0.20974609591245405,
+      "Daily Steps": 0.7647264212585103,
+      "Systolic_BP": 0.5865766582771625,
+      "Diastolic_BP": 0.689481087715013
+    },
+    "Stress Level": {
+      "Age": -0.5717328972817255,
+      "Sleep Duration": -0.9840279696112854,
+      "Quality of Sleep": -0.9453249360386455,
+      "Physical Activity Level": 0.06757265441976958,
+      "Stress Level": 1.0,
+      "Heart Rate": 0.6050204883847619,
+      "Daily Steps": 0.4851087754697003,
+      "Systolic_BP": -0.11580614544594373,
+      "Diastolic_BP": -0.13057768914096585
+    },
+    "Heart Rate": {
+      "Age": -0.6610697745917969,
+      "Sleep Duration": -0.5985956140006649,
+      "Quality of Sleep": -0.7035817846717414,
+      "Physical Activity Level": -0.20974609591245405,
+      "Stress Level": 0.6050204883847619,
+      "Heart Rate": 1.0,
+      "Daily Steps": -0.22126516760726392,
+      "Systolic_BP": -0.07224996667577206,
+      "Diastolic_BP": -0.24762647232592166
+    },
+    "Daily Steps": {
+      "Age": 0.2965606310085165,
+      "Sleep Duration": -0.4831350293182052,
+      "Quality of Sleep": -0.22231716938371274,
+      "Physical Activity Level": 0.7647264212585103,
+      "Stress Level": 0.4851087754697003,
+      "Heart Rate": -0.22126516760726392,
+      "Daily Steps": 1.0,
+      "Systolic_BP": 0.2923244127174229,
+      "Diastolic_BP": 0.4471406961663939
+    },
+    "Systolic_BP": {
+      "Age": 0.6926662169813729,
+      "Sleep Duration": 0.0942512973164911,
+      "Quality of Sleep": 0.2281056932347731,
+      "Physical Activity Level": 0.5865766582771625,
+      "Stress Level": -0.11580614544594373,
+      "Heart Rate": -0.07224996667577206,
+      "Daily Steps": 0.2923244127174229,
+      "Systolic_BP": 1.0,
+      "Diastolic_BP": 0.9665271979542477
+    },
+    "Diastolic_BP": {
+      "Age": 0.7897793111756619,
+      "Sleep Duration": 0.11338049747165463,
+      "Quality of Sleep": 0.2908269069779483,
+      "Physical Activity Level": 0.689481087715013,
+      "Stress Level": -0.13057768914096585,
+      "Heart Rate": -0.24762647232592166,
+      "Daily Steps": 0.4471406961663939,
+      "Systolic_BP": 0.9665271979542477,
+      "Diastolic_BP": 1.0
+    }
+  },
+  "correlation_Insomnia": {
+    "Age": {
+      "Age": 1.0,
+      "Sleep Duration": 0.22062984415814169,
+      "Quality of Sleep": 0.5058906516843091,
+      "Physical Activity Level": 0.16585651073186197,
+      "Stress Level": -0.1698251549803339,
+      "Heart Rate": -0.3459879757798534,
+      "Daily Steps": 0.37216019799531963,
+      "Systolic_BP": 0.04133427797825619,
+      "Diastolic_BP": 0.09792258748238206
+    },
+    "Sleep Duration": {
+      "Age": 0.22062984415814169,
+      "Sleep Duration": 1.0,
+      "Quality of Sleep": 0.753206883416755,
+      "Physical Activity Level": 0.49296253467876955,
+      "Stress Level": -0.4878769551909752,
+      "Heart Rate": -0.16363030192322234,
+      "Daily Steps": 0.18180039725255362,
+      "Systolic_BP": -0.10336916966296882,
+      "Diastolic_BP": -0.12100800826872429
+    },
+    "Quality of Sleep": {
+      "Age": 0.5058906516843091,
+      "Sleep Duration": 0.753206883416755,
+      "Quality of Sleep": 1.0,
+      "Physical Activity Level": 0.3904063877904847,
+      "Stress Level": -0.7230996737518179,
+      "Heart Rate": -0.6054994409154669,
+      "Daily Steps": 0.427586108932884,
+      "Systolic_BP": -0.010797610617523339,
+      "Diastolic_BP": 0.07133616695111215
+    },
+    "Physical Activity Level": {
+      "Age": 0.16585651073186197,
+      "Sleep Duration": 0.49296253467876955,
+      "Quality of Sleep": 0.3904063877904847,
+      "Physical Activity Level": 1.0,
+      "Stress Level": -0.12383151359105543,
+      "Heart Rate": 0.0700375458244742,
+      "Daily Steps": 0.6126183639528485,
+      "Systolic_BP": 0.05962260570067231,
+      "Diastolic_BP": 0.07047099242931773
+    },
+    "Stress Level": {
+      "Age": -0.1698251549803339,
+      "Sleep Duration": -0.4878769551909752,
+      "Quality of Sleep": -0.7230996737518179,
+      "Physical Activity Level": -0.12383151359105543,
+      "Stress Level": 1.0,
+      "Heart Rate": 0.7190358964339921,
+      "Daily Steps": -0.1221459980245376,
+      "Systolic_BP": -0.3327592891007056,
+      "Diastolic_BP": -0.45684188171342044
+    },
+    "Heart Rate": {
+      "Age": -0.3459879757798534,
+      "Sleep Duration": -0.16363030192322234,
+      "Quality of Sleep": -0.6054994409154669,
+      "Physical Activity Level": 0.0700375458244742,
+      "Stress Level": 0.7190358964339921,
+      "Heart Rate": 1.0,
+      "Daily Steps": -0.4982367966400617,
+      "Systolic_BP": 0.00986315900100212,
+      "Diastolic_BP": -0.20571736975053403
+    },
+    "Daily Steps": {
+      "Age": 0.37216019799531963,
+      "Sleep Duration": 0.18180039725255362,
+      "Quality of Sleep": 0.427586108932884,
+      "Physical Activity Level": 0.6126183639528485,
+      "Stress Level": -0.1221459980245376,
+      "Heart Rate": -0.4982367966400617,
+      "Daily Steps": 1.0,
+      "Systolic_BP": -0.23834023104013374,
+      "Diastolic_BP": -0.07072369120757445
+    },
+    "Systolic_BP": {
+      "Age": 0.04133427797825619,
+      "Sleep Duration": -0.10336916966296882,
+      "Quality of Sleep": -0.010797610617523339,
+      "Physical Activity Level": 0.05962260570067231,
+      "Stress Level": -0.3327592891007056,
+      "Heart Rate": 0.00986315900100212,
+      "Daily Steps": -0.23834023104013374,
+      "Systolic_BP": 1.0,
+      "Diastolic_BP": 0.9579883553821088
+    },
+    "Diastolic_BP": {
+      "Age": 0.09792258748238206,
+      "Sleep Duration": -0.12100800826872429,
+      "Quality of Sleep": 0.07133616695111215,
+      "Physical Activity Level": 0.07047099242931773,
+      "Stress Level": -0.45684188171342044,
+      "Heart Rate": -0.20571736975053403,
+      "Daily Steps": -0.07072369120757445,
+      "Systolic_BP": 0.9579883553821088,
+      "Diastolic_BP": 1.0
+    }
+  }
+}

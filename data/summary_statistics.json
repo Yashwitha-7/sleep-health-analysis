@@ -1,0 +1,59 @@
+{
+  "dataset_info": {
+    "total_records": 374,
+    "total_features": 16,
+    "missing_values": 0,
+    "duplicates": 0
+  },
+  "demographics": {
+    "gender_distribution": {
+      "Male": 189,
+      "Female": 185
+    },
+    "age_mean": 42.18449197860963,
+    "age_std": 8.673133465547243,
+    "age_range": [
+      27,
+      59
+    ]
+  },
+  "sleep_metrics": {
+    "avg_sleep_duration": 7.132085561497325,
+    "avg_sleep_quality": 7.31283422459893,
+    "disorder_prevalence": 41.44385026737968,
+    "disorder_distribution": {
+      "None": 219,
+      "Sleep Apnea": 78,
+      "Insomnia": 77
+    }
+  },
+  "lifestyle_factors": {
+    "avg_physical_activity": 59.17112299465241,
+    "avg_stress_level": 5.385026737967914,
+    "avg_daily_steps": 6816.844919786096
+  },
+  "health_indicators": {
+    "avg_heart_rate": 70.16577540106952,
+    "avg_systolic_bp": 128.55347593582889,
+    "avg_diastolic_bp": 84.64973262032086
+  },
+  "occupations": {
+    "Nurse": 73,
+    "Doctor": 71,
+    "Engineer": 63,
+    "Lawyer": 47,
+    "Teacher": 40,
+    "Accountant": 37,
+    "Salesperson": 32,
+    "Scientist": 4,
+    "Software Engineer": 4,
+    "Sales Representative": 2,
+    "Manager": 1
+  },
+  "bmi_categories": {
+    "Normal": 195,
+    "Overweight": 148,
+    "Normal Weight": 21,
+    "Obese": 10
+  }
+}

@@ -1,1 +1,163 @@
+/* Clean, light theme styling */
 
+/* Main container */
+.main {
+    background-color: #FAFAFA;
+    padding: 2rem;
+}
+
+/* Custom headers */
+h1 {
+    color: #2C3E50;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #3498DB;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #34495E;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: #5D6D7E;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+/* Metric cards */
+[data-testid="stMetricValue"] {
+    font-size: 2rem;
+    color: #2C3E50;
+    font-weight: 600;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #7F8C8D;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #3498DB;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 0.5rem 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    background-color: #2980B9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: #ECF0F1;
+    padding: 2rem 1rem;
+}
+
+/* Cards and containers */
+.stAlert {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-left: 4px solid #3498DB;
+}
+
+/* Dataframe styling */
+.dataframe {
+    border: none !important;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 2rem;
+    background-color: transparent;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: white;
+    border-radius: 8px 8px 0 0;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    color: #5D6D7E;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #3498DB;
+    color: white;
+}
+
+/* Input widgets */
+.stSelectbox, .stMultiSelect, .stSlider {
+    background-color: white;
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+/* Smooth transitions */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Cat animation container */
+.cat-animation {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 3rem;
+    animation: float 3s ease-in-out infinite;
+    z-index: 1000;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Loading animation */
+.stSpinner > div {
+    border-color: #3498DB !important;
+}
+
+/* Info boxes */
+.info-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0;
+}
+
+.success-box {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0;
+}
+
+.warning-box {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0;
+}

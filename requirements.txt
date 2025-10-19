@@ -5,5 +5,4 @@ plotly
 scikit-learn
 scipy
 matplotlib
-distutils
 

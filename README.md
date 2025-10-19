@@ -442,19 +442,6 @@ streamlit run app.py
 
 The application will be accessible at `http://localhost:8501`
 
-### Requirements
-
-```
-streamlit>=1.28.0
-pandas>=2.0.0
-numpy>=1.24.0
-plotly>=5.17.0
-scikit-learn>=1.3.0
-scipy>=1.11.0
-seaborn>=0.12.0
-matplotlib>=3.7.0
-```
-
 ## Live Application
 
 **Production URL:** https://sleep-health-analysis-yashwitha.streamlit.app/

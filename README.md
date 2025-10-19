@@ -410,8 +410,7 @@ sleep-health-analysis/
 │
 ├── app.py
 ├── requirements.txt
-├── README.md
-└── analysis_report.md
+└── README.md
 ```
 
 ## Technology Stack

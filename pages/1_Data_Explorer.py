@@ -8,13 +8,17 @@ st.set_page_config(page_title="Data Explorer", page_icon="🔍", layout="wide")
 
 # Load custom CSS
 def load_css():
-    with open('assets/style.css') as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    try:
+        with open('assets/style.css') as f:
+            st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    except:
+        pass
 
-try:
-    load_css()
-except:
-    pass
+load_css()
+
+# Set plotly to dark theme
+import plotly.io as pio
+pio.templates.default = "plotly_dark"
 
 # Load data
 @st.cache_data
@@ -28,9 +32,9 @@ st.title("Data Explorer")
 st.markdown("### Interactive Dataset Exploration and Filtering")
 
 st.markdown("""
-<div style='background-color: white; padding: 1.5rem; border-radius: 10px; 
+<div style='background-color: #1A1D24; padding: 1.5rem; border-radius: 10px; 
             border-left: 4px solid #3498DB; margin-bottom: 2rem;'>
-    <p style='margin: 0; color: #2C3E50;'>
+    <p style='margin: 0; color: #E8E8E8;'>
         Use the filters below to explore specific subsets of the data. 
         All visualizations and statistics update dynamically based on your selections.
     </p>
@@ -221,9 +225,11 @@ with tab2:
             range_color=[-1, 1]
         )
         fig_corr.update_layout(
-            plot_bgcolor='white',
-            paper_bgcolor='white',
-            font=dict(family="Helvetica Neue", size=12, color='#2C3E50'),
+            plot_bgcolor='#1A1D24',
+            paper_bgcolor='#1A1D24',
+            font=dict(family="Helvetica Neue", size=12, color='#E8E8E8'),
+            xaxis=dict(gridcolor='#2D3748'),
+            yaxis=dict(gridcolor='#2D3748'),
             height=400
         )
         st.plotly_chart(fig_corr, use_container_width=True)
@@ -249,9 +255,11 @@ with tab3:
                 color_discrete_sequence=px.colors.qualitative.Set2
             )
             fig_scatter.update_layout(
-                plot_bgcolor='white',
-                paper_bgcolor='white',
-                font=dict(family="Helvetica Neue", size=12, color='#2C3E50')
+                plot_bgcolor='#1A1D24',
+                paper_bgcolor='#1A1D24',
+                font=dict(family="Helvetica Neue", size=12, color='#E8E8E8'),
+                xaxis=dict(gridcolor='#2D3748'),
+                yaxis=dict(gridcolor='#2D3748')
             )
             st.plotly_chart(fig_scatter, use_container_width=True)
         
@@ -268,9 +276,11 @@ with tab3:
                 color_discrete_sequence=px.colors.qualitative.Pastel
             )
             fig_stress.update_layout(
-                plot_bgcolor='white',
-                paper_bgcolor='white',
-                font=dict(family="Helvetica Neue", size=12, color='#2C3E50')
+                plot_bgcolor='#1A1D24',
+                paper_bgcolor='#1A1D24',
+                font=dict(family="Helvetica Neue", size=12, color='#E8E8E8'),
+                xaxis=dict(gridcolor='#2D3748'),
+                yaxis=dict(gridcolor='#2D3748')
             )
             st.plotly_chart(fig_stress, use_container_width=True)
         
@@ -287,9 +297,11 @@ with tab3:
                 color_discrete_sequence=px.colors.qualitative.Safe
             )
             fig_box.update_layout(
-                plot_bgcolor='white',
-                paper_bgcolor='white',
-                font=dict(family="Helvetica Neue", size=12, color='#2C3E50'),
+                plot_bgcolor='#1A1D24',
+                paper_bgcolor='#1A1D24',
+                font=dict(family="Helvetica Neue", size=12, color='#E8E8E8'),
+                xaxis=dict(gridcolor='#2D3748'),
+                yaxis=dict(gridcolor='#2D3748'),
                 showlegend=False
             )
             fig_box.update_xaxes(tickangle=45)
@@ -307,9 +319,11 @@ with tab3:
                 color_discrete_sequence=px.colors.qualitative.Vivid
             )
             fig_violin.update_layout(
-                plot_bgcolor='white',
-                paper_bgcolor='white',
-                font=dict(family="Helvetica Neue", size=12, color='#2C3E50'),
+                plot_bgcolor='#1A1D24',
+                paper_bgcolor='#1A1D24',
+                font=dict(family="Helvetica Neue", size=12, color='#E8E8E8'),
+                xaxis=dict(gridcolor='#2D3748'),
+                yaxis=dict(gridcolor='#2D3748'),
                 showlegend=False
             )
             st.plotly_chart(fig_violin, use_container_width=True)
@@ -321,7 +335,7 @@ st.markdown("---")
 st.markdown("""
 <div style='text-align: center; padding: 1rem;'>
     <span style='font-size: 2rem;'>🐱</span>
-    <p style='color: #7F8C8D; font-size: 0.9rem; margin-top: 0.5rem;'>
+    <p style='color: #A0AEC0; font-size: 0.9rem; margin-top: 0.5rem;'>
         Exploring data with curiosity
     </p>
 </div>

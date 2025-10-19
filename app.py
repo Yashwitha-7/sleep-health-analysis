@@ -16,13 +16,17 @@ st.set_page_config(
 
 # Load custom CSS
 def load_css():
-    with open('assets/style.css') as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    try:
+        with open('assets/style.css') as f:
+            st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+    except:
+        pass
 
-try:
-    load_css()
-except:
-    pass
+load_css()
+
+# Set default plotly template to dark
+import plotly.io as pio
+pio.templates.default = "plotly_dark"
 
 # Load data
 @st.cache_data
@@ -53,7 +57,7 @@ with st.sidebar:
         <div style='font-size: 4rem; animation: float 3s ease-in-out infinite;'>
             🐱
         </div>
-        <p style='color: #7F8C8D; font-size: 0.9rem;'>Your sleep companion</p>
+        <p style='color: #A0AEC0; font-size: 0.9rem;'>Your sleep companion</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -64,8 +68,8 @@ st.markdown("### Understanding the Connection Between Daily Habits and Sleep Qua
 st.markdown("""
 <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
             padding: 2rem; border-radius: 10px; color: white; margin: 2rem 0;'>
-    <h3 style='color: white; margin: 0; padding-bottom: 0.5rem;'>Welcome to Your Sleep Health Dashboard</h3>
-    <p style='margin: 0; font-size: 1.1rem;'>
+    <h3 style='color: white !important; margin: 0; padding-bottom: 0.5rem;'>Welcome to Your Sleep Health Dashboard</h3>
+    <p style='margin: 0; font-size: 1.1rem; color: white !important;'>
         Explore comprehensive insights into how lifestyle choices affect sleep quality. 
         This tool analyzes data from 374 individuals to help you understand patterns and make informed decisions.
     </p>
@@ -123,9 +127,11 @@ with tab1:
         fig_duration.update_layout(
             xaxis_title='Hours of Sleep',
             yaxis_title='Number of Participants',
-            plot_bgcolor='white',
-            paper_bgcolor='white',
-            font=dict(family="Helvetica Neue", size=12, color='#2C3E50')
+            plot_bgcolor='#1A1D24',
+            paper_bgcolor='#1A1D24',
+            font=dict(family="Helvetica Neue", size=12, color='#E8E8E8'),
+            xaxis=dict(gridcolor='#2D3748'),
+            yaxis=dict(gridcolor='#2D3748')
         )
         st.plotly_chart(fig_duration, use_container_width=True)
     
@@ -141,9 +147,11 @@ with tab1:
         fig_quality.update_layout(
             xaxis_title='Quality Score (1-10)',
             yaxis_title='Number of Participants',
-            plot_bgcolor='white',
-            paper_bgcolor='white',
-            font=dict(family="Helvetica Neue", size=12, color='#2C3E50')
+            plot_bgcolor='#1A1D24',
+            paper_bgcolor='#1A1D24',
+            font=dict(family="Helvetica Neue", size=12, color='#E8E8E8'),
+            xaxis=dict(gridcolor='#2D3748'),
+            yaxis=dict(gridcolor='#2D3748')
         )
         st.plotly_chart(fig_quality, use_container_width=True)
 
@@ -160,8 +168,8 @@ with tab2:
             color_discrete_sequence=['#3498DB', '#E74C3C']
         )
         fig_gender.update_layout(
-            paper_bgcolor='white',
-            font=dict(family="Helvetica Neue", size=12, color='#2C3E50')
+            paper_bgcolor='#1A1D24',
+            font=dict(family="Helvetica Neue", size=12, color='#E8E8E8')
         )
         st.plotly_chart(fig_gender, use_container_width=True)
     
@@ -175,9 +183,11 @@ with tab2:
         )
         fig_age.update_layout(
             yaxis_title='Age (years)',
-            plot_bgcolor='white',
-            paper_bgcolor='white',
-            font=dict(family="Helvetica Neue", size=12, color='#2C3E50')
+            plot_bgcolor='#1A1D24',
+            paper_bgcolor='#1A1D24',
+            font=dict(family="Helvetica Neue", size=12, color='#E8E8E8'),
+            xaxis=dict(gridcolor='#2D3748'),
+            yaxis=dict(gridcolor='#2D3748')
         )
         st.plotly_chart(fig_age, use_container_width=True)
 
@@ -196,10 +206,12 @@ with tab3:
             labels={'x': 'Sleep Disorder', 'y': 'Count'}
         )
         fig_disorder.update_layout(
-            plot_bgcolor='white',
-            paper_bgcolor='white',
+            plot_bgcolor='#1A1D24',
+            paper_bgcolor='#1A1D24',
             showlegend=False,
-            font=dict(family="Helvetica Neue", size=12, color='#2C3E50')
+            font=dict(family="Helvetica Neue", size=12, color='#E8E8E8'),
+            xaxis=dict(gridcolor='#2D3748'),
+            yaxis=dict(gridcolor='#2D3748')
         )
         st.plotly_chart(fig_disorder, use_container_width=True)
     
@@ -215,10 +227,12 @@ with tab3:
             labels={'x': 'BMI Category', 'y': 'Count'}
         )
         fig_bmi.update_layout(
-            plot_bgcolor='white',
-            paper_bgcolor='white',
+            plot_bgcolor='#1A1D24',
+            paper_bgcolor='#1A1D24',
             showlegend=False,
-            font=dict(family="Helvetica Neue", size=12, color='#2C3E50')
+            font=dict(family="Helvetica Neue", size=12, color='#E8E8E8'),
+            xaxis=dict(gridcolor='#2D3748'),
+            yaxis=dict(gridcolor='#2D3748')
         )
         st.plotly_chart(fig_bmi, use_container_width=True)
 
@@ -233,8 +247,8 @@ with col1:
     st.markdown("""
     <div style='background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); 
                 padding: 1.5rem; border-radius: 10px; color: white;'>
-        <h4 style='color: white; margin: 0;'>Physical Activity Matters</h4>
-        <p style='margin: 0.5rem 0 0 0;'>
+        <h4 style='color: white !important; margin: 0;'>Physical Activity Matters</h4>
+        <p style='margin: 0.5rem 0 0 0; color: white !important;'>
             Higher physical activity levels correlate with better sleep quality scores.
         </p>
     </div>
@@ -244,8 +258,8 @@ with col2:
     st.markdown("""
     <div style='background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); 
                 padding: 1.5rem; border-radius: 10px; color: white;'>
-        <h4 style='color: white; margin: 0;'>Stress Impact</h4>
-        <p style='margin: 0.5rem 0 0 0;'>
+        <h4 style='color: white !important; margin: 0;'>Stress Impact</h4>
+        <p style='margin: 0.5rem 0 0 0; color: white !important;'>
             Elevated stress levels show strong negative correlation with sleep quality.
         </p>
     </div>
@@ -255,8 +269,8 @@ with col3:
     st.markdown("""
     <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
                 padding: 1.5rem; border-radius: 10px; color: white;'>
-        <h4 style='color: white; margin: 0;'>Occupation Differences</h4>
-        <p style='margin: 0.5rem 0 0 0;'>
+        <h4 style='color: white !important; margin: 0;'>Occupation Differences</h4>
+        <p style='margin: 0.5rem 0 0 0; color: white !important;'>
             Sleep patterns vary significantly across different professions.
         </p>
     </div>
@@ -279,7 +293,7 @@ Navigate to any section using the sidebar menu to begin your analysis.
 # Footer
 st.markdown("---")
 st.markdown("""
-<div style='text-align: center; color: #7F8C8D; padding: 2rem;'>
+<div style='text-align: center; color: #A0AEC0; padding: 2rem;'>
     <p>Sleep Health & Lifestyle Analysis Dashboard</p>
     <p style='font-size: 0.9rem;'>Analyzing lifestyle factors and their impact on sleep quality</p>
 </div>

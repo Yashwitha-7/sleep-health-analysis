@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project analyzes the relationship between lifestyle factors (physical activity, stress, diet, screen time) and sleep quality to identify individuals at risk for sleep disorders. The analysis addresses the neuroscience research question: "How do behavioral patterns affect sleep architecture and cognitive recovery?"
+This project analyzes the relationship between lifestyle factors (physical activity, stress, diet, screen time) and sleep quality to identify individuals at risk for sleep disorders.
 
 **Research Question:** How do behavioral patterns affect sleep architecture and cognitive recovery?
 

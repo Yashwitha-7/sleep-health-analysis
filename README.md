@@ -469,37 +469,12 @@ The application will be accessible at `http://localhost:8501`
 - Sleep disorder classification models (multi-class classification)
 - Model comparison framework with performance benchmarking
 
-**Advanced Visualization Techniques:**
-- 3D scatter plot projections for multi-variable relationships
-- Network graphs for feature interaction visualization
-- Time-series analysis capabilities for longitudinal data
-- Interactive correlation explorer with drill-down capabilities
-- Animated transitions for temporal comparisons
-
 **User Experience Improvements:**
 - User data upload and analysis functionality
 - Comparative analysis tool for similar demographic profiles
-- PDF report generation capability with comprehensive insights
 - Export functionality for personalized recommendations
 - Dashboard customization options
 - Mobile-responsive design optimization
-
-**Educational Content:**
-- Educational content modules on sleep science
-- Embedded tooltips explaining statistical concepts
-- Glossary of sleep health terminology
-- Links to peer-reviewed research
-- Best practices guide for sleep hygiene
-
-### Extended Features (Post-Course)
-
-- Temporal analysis capabilities for longitudinal data tracking
-- Unsupervised clustering for sleep profile identification and segmentation
-- Experimental design framework for lifestyle intervention studies
-- Wearable device data integration (Fitbit, Apple Watch, etc.)
-- Social sharing capabilities for insights
-- Multi-language support for broader accessibility
-- API endpoint creation for programmatic access
 
 ## Academic Learnings
 

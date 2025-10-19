@@ -549,7 +549,7 @@ Available at: https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifest
 
 ## Author Information
 
-**Name:** Yashwitha  
+**Name:** Sai Yashwitha Reddy Velamuru
 **Institution:** Michigan State University  
 **Course:** CMSE830 - Foundations of Data Science  
 **Semester:** Fall 2025  

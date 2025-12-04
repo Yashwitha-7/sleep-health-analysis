@@ -571,8 +571,7 @@ elif page == " Dataset & EDA":
             fig.update_layout(
                 plot_bgcolor='#F9F6E4',
                 paper_bgcolor='#F9F6E4',
-                title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+                title_font_color='#F28B75'
             )
             st.plotly_chart(fig, use_container_width=True)
         
@@ -587,8 +586,7 @@ elif page == " Dataset & EDA":
             fig.update_layout(
                 plot_bgcolor='#F9F6E4',
                 paper_bgcolor='#F9F6E4',
-                title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+                title_font_color='#F28B75'
             )
             st.plotly_chart(fig, use_container_width=True)
         
@@ -634,8 +632,7 @@ elif page == " Dataset & EDA":
             plot_bgcolor='#F9F6E4',
             paper_bgcolor='#F9F6E4',
             title_text="Distribution of Key Variables",
-            title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+            title_font_color='#F28B75'
         )
         
         st.plotly_chart(fig, use_container_width=True)
@@ -670,8 +667,7 @@ elif page == " Dataset & EDA":
             height=800,
             plot_bgcolor='#F9F6E4',
             paper_bgcolor='#F9F6E4',
-            title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+            title_font_color='#F28B75'
         )
         
         st.plotly_chart(fig, use_container_width=True)
@@ -714,8 +710,7 @@ elif page == " Dataset & EDA":
             height=800,
             plot_bgcolor='#F9F6E4',
             paper_bgcolor='#F9F6E4',
-            title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+            title_font_color='#F28B75'
         )
         
         st.plotly_chart(fig, use_container_width=True)
@@ -747,8 +742,7 @@ elif page == " Dataset & EDA":
             fig.update_layout(
                 plot_bgcolor='#F9F6E4',
                 paper_bgcolor='#F9F6E4',
-                title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+                title_font_color='#F28B75'
             )
             st.plotly_chart(fig, use_container_width=True)
         
@@ -785,8 +779,7 @@ elif page == " Dataset & EDA":
         fig.update_layout(
             plot_bgcolor='#F9F6E4',
             paper_bgcolor='#F9F6E4',
-            title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+            title_font_color='#F28B75'
         )
         st.plotly_chart(fig, use_container_width=True)
         
@@ -808,8 +801,7 @@ elif page == " Dataset & EDA":
             fig.update_layout(
                 plot_bgcolor='#F9F6E4',
                 paper_bgcolor='#F9F6E4',
-                title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+                title_font_color='#F28B75'
             )
             st.plotly_chart(fig, use_container_width=True)
         
@@ -825,8 +817,7 @@ elif page == " Dataset & EDA":
             fig.update_layout(
                 plot_bgcolor='#F9F6E4',
                 paper_bgcolor='#F9F6E4',
-                title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+                title_font_color='#F28B75'
             )
             st.plotly_chart(fig, use_container_width=True)
         
@@ -867,8 +858,7 @@ elif page == " Dataset & EDA":
             fig.update_layout(
                 plot_bgcolor='#F9F6E4',
                 paper_bgcolor='#F9F6E4',
-                title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+                title_font_color='#F28B75'
             )
             st.plotly_chart(fig, use_container_width=True)
         
@@ -890,8 +880,7 @@ elif page == " Dataset & EDA":
         fig.update_layout(
             plot_bgcolor='#F9F6E4',
             paper_bgcolor='#F9F6E4',
-            title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+            title_font_color='#F28B75'
         )
         st.plotly_chart(fig, use_container_width=True)
         
@@ -1033,8 +1022,7 @@ elif page == " Data Processing":
             fig.update_layout(
                 plot_bgcolor='#F9F6E4',
                 paper_bgcolor='#F9F6E4',
-                title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+                title_font_color='#F28B75'
             )
             st.plotly_chart(fig, use_container_width=True)
             
@@ -1049,8 +1037,7 @@ elif page == " Data Processing":
             fig.update_layout(
                 plot_bgcolor='#F9F6E4',
                 paper_bgcolor='#F9F6E4',
-                title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+                title_font_color='#F28B75'
             )
             st.plotly_chart(fig, use_container_width=True)
         
@@ -1066,8 +1053,7 @@ elif page == " Data Processing":
             fig.update_layout(
                 plot_bgcolor='#F9F6E4',
                 paper_bgcolor='#F9F6E4',
-                title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+                title_font_color='#F28B75'
             )
             st.plotly_chart(fig, use_container_width=True)
             
@@ -1103,8 +1089,7 @@ elif page == " Data Processing":
         fig.update_layout(
             plot_bgcolor='#F9F6E4',
             paper_bgcolor='#F9F6E4',
-            title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+            title_font_color='#F28B75'
         )
         st.plotly_chart(fig, use_container_width=True)
         
@@ -1203,8 +1188,7 @@ elif page == " Data Processing":
             plot_bgcolor='#F9F6E4',
             paper_bgcolor='#F9F6E4',
             title_text=f"Scaling Methods Comparison - {feature_to_scale}",
-            title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+            title_font_color='#F28B75'
         )
         
         st.plotly_chart(fig, use_container_width=True)
@@ -1391,7 +1375,6 @@ elif page == " Data Processing":
         fig.update_layout(
             title="Imputed vs Original Values - Sleep Duration",
             xaxis_title="Sample Index",
-            font=dict(color='#2C3E50'),
             yaxis_title="Sleep Duration (hours)",
             plot_bgcolor='#F9F6E4',
             paper_bgcolor='#F9F6E4',
@@ -1539,7 +1522,7 @@ elif page == " Machine Learning Models":
             fig.add_shape(type='line', x0=y_test_reg.min(), y0=y_test_reg.min(),
                          x1=y_test_reg.max(), y1=y_test_reg.max(),
                          line=dict(color='#F7C289', dash='dash'))
-            fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75', font=dict(color='#2C3E50'))
+            fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75')
             st.plotly_chart(fig, use_container_width=True)
         
         with col2:
@@ -1554,7 +1537,7 @@ elif page == " Machine Learning Models":
             fig.add_shape(type='line', x0=y_test_reg.min(), y0=y_test_reg.min(),
                          x1=y_test_reg.max(), y1=y_test_reg.max(),
                          line=dict(color='#F28B75', dash='dash'))
-            fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75', font=dict(color='#2C3E50'))
+            fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75')
             st.plotly_chart(fig, use_container_width=True)
         
         # Residual plot for best model
@@ -1570,7 +1553,7 @@ elif page == " Machine Learning Models":
             color_discrete_sequence=['#EAE568']
         )
         fig.add_hline(y=0, line_dash='dash', line_color='#F28B75')
-        fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75', font=dict(color='#2C3E50'))
+        fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75')
         st.plotly_chart(fig, use_container_width=True)
         
         st.info("""
@@ -1678,7 +1661,7 @@ elif page == " Machine Learning Models":
                 color_continuous_scale='Peach',
                 text_auto=True
             )
-            fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75', font=dict(color='#2C3E50'))
+            fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75')
             st.plotly_chart(fig, use_container_width=True)
         
         with col2:
@@ -1693,7 +1676,7 @@ elif page == " Machine Learning Models":
                 color_continuous_scale='Oranges',
                 text_auto=True
             )
-            fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75', font=dict(color='#2C3E50'))
+            fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75')
             st.plotly_chart(fig, use_container_width=True)
         
         # Classification report for best model
@@ -1740,7 +1723,7 @@ elif page == " Machine Learning Models":
             text='R² Score'
         )
         fig.update_traces(texttemplate='%{text:.4f}', textposition='outside')
-        fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75', font=dict(color='#2C3E50'))
+        fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75')
         st.plotly_chart(fig, use_container_width=True)
         
         # Classification comparison
@@ -1756,7 +1739,7 @@ elif page == " Machine Learning Models":
             text='Accuracy'
         )
         fig.update_traces(texttemplate='%{text:.2f}%', textposition='outside')
-        fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75', font=dict(color='#2C3E50'))
+        fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75')
         st.plotly_chart(fig, use_container_width=True)
         
         st.markdown("---")
@@ -1781,11 +1764,10 @@ elif page == " Machine Learning Models":
             barmode='group',
             title='Classification Metrics Comparison',
             xaxis_title='Model',
-            font=dict(color='#2C3E50'),
             yaxis_title='Score (%)',
             plot_bgcolor='#F9F6E4',
             paper_bgcolor='#F9F6E4',
-            title_font_color='#F28B75',
+            title_font_color='#F28B75'
         )
         
         st.plotly_chart(fig, use_container_width=True)
@@ -1852,11 +1834,10 @@ elif page == " Machine Learning Models":
         
         fig.update_layout(
             title='Cross-Validation Score Distribution',
-            font=dict(color='#2C3E50'),
             yaxis_title='Accuracy (%)',
             plot_bgcolor='#F9F6E4',
             paper_bgcolor='#F9F6E4',
-            title_font_color='#F28B75',
+            title_font_color='#F28B75'
         )
         
         st.plotly_chart(fig, use_container_width=True)
@@ -1961,7 +1942,7 @@ elif page == " Advanced Techniques":
             color='Impact on Performance',
             color_continuous_scale='Peach'
         )
-        fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75', font=dict(color='#2C3E50'))
+        fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75')
         st.plotly_chart(fig, use_container_width=True)
         
         st.success("""
@@ -2067,11 +2048,10 @@ elif page == " Advanced Techniques":
             title='Feature Importance - Individual vs Cumulative',
             xaxis_title='Feature',
             yaxis_title='Individual Importance',
-            font=dict(color='#2C3E50'),
             yaxis2=dict(title='Cumulative Importance', overlaying='y', side='right'),
             plot_bgcolor='#F9F6E4',
             paper_bgcolor='#F9F6E4',
-            title_font_color='#F28B75',
+            title_font_color='#F28B75'
         )
         
         st.plotly_chart(fig, use_container_width=True)
@@ -2120,7 +2100,7 @@ elif page == " Advanced Techniques":
             labels={'x': 'Number of Clusters (k)', 'y': 'Within-Cluster Sum of Squares'},
             color_discrete_sequence=['#F28B75']
         )
-        fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75', font=dict(color='#2C3E50'))
+        fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75')
         st.plotly_chart(fig, use_container_width=True)
         
         # Perform K-Means with optimal k
@@ -2156,7 +2136,7 @@ elif page == " Advanced Techniques":
             title='K-Means Clusters in PCA Space',
             color_discrete_sequence=['#F28B75', '#F7C289', '#EAE568']
         )
-        fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75', font=dict(color='#2C3E50'))
+        fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75')
         st.plotly_chart(fig, use_container_width=True)
         
         st.markdown("---")
@@ -2247,7 +2227,7 @@ elif page == " Advanced Techniques":
                 title='PCA: Sleep Disorder Separation',
                 color_discrete_sequence=['#F28B75', '#F7C289', '#EAE568']
             )
-            fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75', font=dict(color='#2C3E50'))
+            fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75')
             st.plotly_chart(fig, use_container_width=True)
         
         with col2:
@@ -2280,7 +2260,7 @@ elif page == " Advanced Techniques":
                 title='t-SNE: Non-linear Dimensionality Reduction',
                 color_discrete_sequence=['#F28B75', '#F7C289', '#EAE568']
             )
-            fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75', font=dict(color='#2C3E50'))
+            fig.update_layout(plot_bgcolor='#F9F6E4', paper_bgcolor='#F9F6E4', title_font_color='#F28B75')
             st.plotly_chart(fig, use_container_width=True)
         
         st.markdown("---")
@@ -2321,8 +2301,7 @@ elif page == " Advanced Techniques":
             yaxis_title='Feature',
             plot_bgcolor='#F9F6E4',
             paper_bgcolor='#F9F6E4',
-            title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+            title_font_color='#F28B75'
         )
         
         st.plotly_chart(fig, use_container_width=True)
@@ -2496,10 +2475,9 @@ elif page == " Interactive Prediction":
             fig.update_layout(
                 showlegend=False,
                 height=200,
-                font=dict(color='#2C3E50'),
                 margin=dict(l=0, r=0, t=0, b=0),
                 plot_bgcolor='#F9F6E4',
-                paper_bgcolor='#F9F6E4',
+                paper_bgcolor='#F9F6E4'
             )
             st.plotly_chart(fig, use_container_width=True)
         
@@ -2748,8 +2726,7 @@ elif page == " Results & Insights":
         fig.update_layout(
             plot_bgcolor='#F9F6E4',
             paper_bgcolor='#F9F6E4',
-            title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+            title_font_color='#F28B75'
         )
         st.plotly_chart(fig, use_container_width=True)
         
@@ -2802,8 +2779,7 @@ elif page == " Results & Insights":
             fig.update_layout(
                 plot_bgcolor='#F9F6E4',
                 paper_bgcolor='#F9F6E4',
-                title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+                title_font_color='#F28B75'
             )
             st.plotly_chart(fig, use_container_width=True)
         
@@ -2839,8 +2815,7 @@ elif page == " Results & Insights":
             fig.update_layout(
                 plot_bgcolor='#F9F6E4',
                 paper_bgcolor='#F9F6E4',
-                title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+                title_font_color='#F28B75'
             )
             st.plotly_chart(fig, use_container_width=True)
         
@@ -2888,8 +2863,7 @@ elif page == " Results & Insights":
         fig.update_layout(
             plot_bgcolor='#F9F6E4',
             paper_bgcolor='#F9F6E4',
-            title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
+            title_font_color='#F28B75'
         )
         st.plotly_chart(fig, use_container_width=True)
         
@@ -2927,11 +2901,10 @@ elif page == " Results & Insights":
             barmode='group',
             title='Classification Models - Multi-Metric Comparison',
             xaxis_title='Model',
-            font=dict(color='#2C3E50'),
             yaxis_title='Score (%)',
             plot_bgcolor='#F9F6E4',
             paper_bgcolor='#F9F6E4',
-            title_font_color='#F28B75',
+            title_font_color='#F28B75'
         )
         
         st.plotly_chart(fig, use_container_width=True)

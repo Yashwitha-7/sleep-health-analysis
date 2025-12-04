@@ -145,23 +145,6 @@ st.markdown("""
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
-    
-    /* Fix text visibility ONLY in colored message boxes (success/info/warning/error) */
-    .stSuccess, .stSuccess p, .stSuccess div, .stSuccess span, .stSuccess li {
-        color: #1e4620 !important;
-    }
-    
-    .stInfo, .stInfo p, .stInfo div, .stInfo span, .stInfo li {
-        color: #1e4620 !important;
-    }
-    
-    .stWarning, .stWarning p, .stWarning div, .stWarning span, .stWarning li {
-        color: #664d03 !important;
-    }
-    
-    .stError, .stError p, .stError div, .stError span, .stError li {
-        color: #58151c !important;
-    }
 </style>
 """, unsafe_allow_html=True)
 

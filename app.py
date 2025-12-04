@@ -1427,7 +1427,7 @@ elif page == " Machine Learning Models":
     
     tab1, tab2, tab3, tab4 = st.tabs([
         " Regression Models",
-        " Classification Models",
+        "🟢 Classification Models",
         " Model Comparison",
         " Validation Results"
     ])
@@ -1781,7 +1781,6 @@ elif page == " Machine Learning Models":
             barmode='group',
             title='Classification Metrics Comparison',
             xaxis_title='Model',
-            font=dict(color='#2C3E50'),
             yaxis_title='Score (%)',
             plot_bgcolor='#F9F6E4',
             paper_bgcolor='#F9F6E4',

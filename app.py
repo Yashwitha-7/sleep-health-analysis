@@ -3086,385 +3086,150 @@ elif page == " Results & Insights":
 # PAGE 8: TECHNICAL DOCUMENTATION
 # =============================================================================
 elif page == " Technical Documentation":
-    st.title(" Technical Documentation & Rubric Evaluation")
+    st.title(" Technical Documentation")
     
-    tab1, tab2, tab3, tab4 = st.tabs([
-        " Methodology",
-        " Rubric Scores",
-        " GitHub",
-        " References"
-    ])
+    # Only showing Methodology documentation
+    # Removed: Rubric Scores, GitHub, and References tabs
     
-    # TAB 1: Methodology
-    with tab1:
-        st.header("Complete Methodology Documentation")
-        
-        st.subheader("1. Data Collection & Cleaning")
-        st.markdown("""
-        - **Source:** Kaggle Sleep Health and Lifestyle Dataset
-        - **Size:** 374 observations × 13 baseline features
-        - **Quality Checks:**
-          * Zero duplicate records identified
-          * Missing value analysis: 58.6% in Sleep_Disorder column (informative missingness)
-          * Outlier detection using IQR method (outliers retained as clinically meaningful)
-          * Data type validation completed
-        """)
-        
-        st.subheader("2. Exploratory Data Analysis")
-        st.markdown("""
-        - **Univariate Analysis:**
-          * Distribution analysis for all numerical variables
-          * Summary statistics (mean, median, std, min, max, quartiles)
-          * Identification of skewness and kurtosis
-        
-        - **Bivariate Analysis:**
-          * Correlation matrix for all numerical features
-          * Key findings: r(Sleep Duration, Quality) = 0.88, r(Stress, Quality) = -0.90
-          * Scatter plot matrices for key feature pairs
-        
-        - **Categorical Analysis:**
-          * Distribution of sleep disorders, BMI categories, occupations
-          * Cross-tabulations with target variables
-          * Chi-square tests for independence
-        
-        - **Statistical Testing:**
-          * ANOVA for group differences (F = 123.4, p < 0.001)
-          * Chi-square tests (χ² = 45.3 for BMI-Disorder association)
-          * T-tests for gender comparisons
-        """)
-        
-        st.subheader("3. Data Preprocessing")
-        st.markdown("""
-        **Encoding Strategies:**
-        - LabelEncoder for Gender (2 classes)
-        - LabelEncoder for Occupation (11 classes)
-        - LabelEncoder for BMI Category (3 classes)
-        - LabelEncoder for Sleep Disorder (3 classes)
-        - All mappings saved to encoder_mappings.json
-        
-        **Feature Engineering (8 new features):**
-        1. Systolic_BP: Extracted from Blood_Pressure
-        2. Diastolic_BP: Extracted from Blood_Pressure
-        3. Sleep_Efficiency: Sleep_Duration / Quality_of_Sleep
-        4. Activity_Stress_Ratio: Physical_Activity / (Stress + 1)
-        5. Sleep_Deficit: 8 - Sleep_Duration
-        6. Age_Group: Binned (Young Adult, Middle-Aged, Senior)
-        7. Activity_Category: Binned (Low, Moderate, High)
-        8. Stress_Category: Binned (Low, Moderate, High)
-        
-        **Scaling Methods (3 implemented):**
-        - StandardScaler: z = (x - μ) / σ
-        - MinMaxScaler: x_scaled = (x - min) / (max - min)
-        - RobustScaler: x_scaled = (x - median) / IQR
-        
-        **Imputation Techniques (3 demonstrated):**
-        - SimpleImputer: Mean-based univariate imputation
-        - KNNImputer: K=5 neighbors multivariate imputation
-        - IterativeImputer: MICE method multivariate imputation
-        """)
-        
-        st.subheader("4. Model Development")
-        st.markdown("""
-        **Regression Models (5 algorithms):**
-        1. Random Forest Regressor (n_estimators=100, max_depth=10)
-        2. Gradient Boosting Regressor (n_estimators=100, learning_rate=0.1)
-        3. Ridge Regression (alpha=1.0)
-        4. Support Vector Regressor (kernel='rbf')
-        5. Linear Regression (baseline)
-        
-        **Classification Models (5 algorithms):**
-        1. Random Forest Classifier (n_estimators=100)
-        2. Gradient Boosting Classifier (n_estimators=100)
-        3. Logistic Regression (multi_class='multinomial')
-        4. Support Vector Classifier (kernel='rbf')
-        5. K-Nearest Neighbors (n_neighbors=5)
-        
-        **Train-Test Split:**
-        - Split ratio: 80% train, 20% test
-        - Stratified sampling for classification
-        - Random state: 42 (reproducibility)
-        """)
-        
-        st.subheader("5. Advanced Techniques")
-        st.markdown("""
-        **Hyperparameter Optimization:**
-        - Method: GridSearchCV
-        - Cross-validation: 5-fold
-        - Parameters tuned: 5 (n_estimators, max_depth, min_samples_split, min_samples_leaf, max_features)
-        - Combinations tested: 216
-        - Best score achieved: 97.33%
-        
-        **Cross-Validation:**
-        - Method: Stratified K-Fold
-        - Number of folds: 10
-        - Scoring metric: Accuracy for classification, R² for regression
-        - Result: Low variance (SD = 1.34-2.01%)
-        
-        **Ensemble Methods:**
-        - Hard Voting Classifier: Majority vote (96.00% accuracy)
-        - Soft Voting Classifier: Probability averaging (96.67% accuracy)
-        
-        **Feature Importance:**
-        - Random Forest: Impurity-based importance
-        - Gradient Boosting: Gain-based importance
-        - Top 3 features: Stress Level (28.45%), Sleep Duration (26.12%), Physical Activity (18.34%)
-        
-        **Clustering:**
-        - Algorithm: K-Means
-        - Optimal clusters: 3 (determined by elbow method)
-        - Silhouette score: 0.58
-        - Distinct phenotypes identified: Healthy, At-Risk, High-Risk
-        
-        **Dimensionality Reduction:**
-        - PCA: 2 components, 47.3% variance explained
-        - t-SNE: Perplexity=30
-        """)
-        
-        st.subheader("6. Evaluation Metrics")
-        st.markdown("""
-        **Regression Metrics:**
-        - R² Score: Proportion of variance explained
-        - RMSE: Root Mean Squared Error
-        - MAE: Mean Absolute Error
-        - MSE: Mean Squared Error
-        
-        **Classification Metrics:**
-        - Accuracy: Overall correct predictions
-        - Precision: True positives / (True positives + False positives)
-        - Recall: True positives / (True positives + False negatives)
-        - F1-Score: Harmonic mean of precision and recall
-        - Confusion Matrix: Complete error analysis
-        """)
+    # Methodology Documentation
+    st.header("Complete Methodology Documentation")
     
-    # TAB 2: Rubric Scores
-    with tab2:
-        st.header("Dr. Chen's Rubric Evaluation")
-        
-        st.subheader("Technical Implementation Score (TIS)")
-        
-        tis_data = {
-            'Component': ['Navigation', 'Instructions', 'Visual Design', 'Interactivity', 'Error Handling'],
-            'Score': [5, 5, 5, 5, 5],
-            'Max Score': [5, 5, 5, 5, 5],
-            'Justification': [
-                'Clear 8-page structure with logical flow. Sidebar navigation with consistent organization.',
-                'Step-by-step guidance on all pages. Purpose stated upfront. Interactive prediction tool with clear instructions.',
-                'Professional Light & Airy color palette. Consistent fonts and spacing. Appropriate white space throughout.',
-                'Responsive sliders and inputs. Real-time predictions. Interactive Plotly visualizations. Loading states indicated.',
-                'Input validation on prediction tool. Graceful handling of edge cases. Helpful feedback messages.'
-            ]
-        }
-        
-        tis_df = pd.DataFrame(tis_data)
-        st.dataframe(tis_df, use_container_width=True, hide_index=True)
-        
-        st.metric("Total TIS Score", "25/25", delta="Excellent", delta_color="normal")
-        
-        st.markdown("---")
-        
-        st.subheader("Business Value Score (BVS)")
-        
-        bvs_data = {
-            'Component': ['Problem Definition', 'Solution Effectiveness', 'Innovation', 'User Experience', 'Deployment Ready'],
-            'Score': [5, 5, 5, 5, 5],
-            'Max Score': [5, 5, 5, 5, 5],
-            'Justification': [
-                'Clear problem: sleep disorder prediction. Target users identified (healthcare, public health, individuals). Use case well-defined.',
-                'Solves stated problem with 96% accuracy. Practical implementation via web app. Clear outcomes and predictions.',
-                'Creative approach combining 10 ML models. Unique clustering insights. Novel feature engineering. Interactive prediction tool.',
-                'Intuitive 8-page workflow. Minimal learning curve. Clear value proposition. Engaging visualizations and interactivity.',
-                'Complete end-to-end solution. Production-quality code. Scalable design. Professional polish with documentation.'
-            ]
-        }
-        
-        bvs_df = pd.DataFrame(bvs_data)
-        st.dataframe(bvs_df, use_container_width=True, hide_index=True)
-        
-        st.metric("Total BVS Score", "25/25", delta="Excellent", delta_color="normal")
-        
-        st.markdown("---")
-        
-        st.subheader("Data Science Excellence Score (DSE)")
-        
-        dse_data = {
-            'Component': ['Data Processing', 'Analysis Depth', 'Visualization', 'Technical Documentation', 'Innovation'],
-            'Score': [5, 5, 5, 5, 5],
-            'Max Score': [5, 5, 5, 5, 5],
-            'Justification': [
-                'Comprehensive cleaning. 3 imputation methods. LabelEncoder for 4 categoricals. 3 scaling methods. Outlier analysis with IQR.',
-                'Statistical tests (chi-square, ANOVA, t-tests). 10 ML algorithms. Rigorous validation (10-fold CV). Comprehensive metrics.',
-                '30+ interactive Plotly charts. Appropriate types (scatter, bar, box, heatmap). Clear labeling. Color accessible palette.',
-                'Complete methodology documented. Assumptions stated. Limitations acknowledged. Code well-commented. Decisions justified.',
-                'Novel feature engineering (8 features). GridSearchCV with 216 combinations. Ensemble methods. Clustering phenotypes. Advanced techniques throughout.'
-            ]
-        }
-        
-        dse_df = pd.DataFrame(dse_data)
-        st.dataframe(dse_df, use_container_width=True, hide_index=True)
-        
-        st.metric("Total DSE Score", "25/25", delta="Excellent", delta_color="normal")
-        
-        st.markdown("---")
-        
-        # Overall summary
-        st.subheader("Overall Evaluation Summary")
-        
-        col1, col2, col3, col4 = st.columns(4)
-        
-        with col1:
-            st.metric("TIS", "25/25")
-        with col2:
-            st.metric("BVS", "25/25")
-        with col3:
-            st.metric("DSE", "25/25")
-        with col4:
-            st.metric("Total", "75/75")
-        
-        st.success("""
-        ## OVERALL RATING: MOVE TO PRODUCTION
-        
-        **Rationale:**
-        - All three evaluation categories score perfect 25/25
-        - Demonstrates both client-facing excellence and robust data science methodology
-        - Complete solution with professional polish
-        - Production-ready quality with comprehensive documentation
-        - Clear value proposition for multiple stakeholders
-        - Scalable design suitable for deployment
-        
-        **Recommendation:** Approved for immediate production deployment with monitoring plan.
-        """)
-        
-        st.markdown("---")
-        
-        # Course rubric
-        st.subheader("Course Rubric Compliance")
-        
-        course_rubric = pd.DataFrame({
-            'Category': [
-                'Data Collection', 'EDA', 'Data Processing', 'Model Development',
-                'Streamlit', 'GitHub', 'Advanced Techniques', 'Specialized Applications',
-                'High Performance Computing', 'Real-World Application', 'Exceptional Presentation'
-            ],
-            'Points': [15, 15, 15, 20, 25, 10, 5, 5, 5, 5, 5],
-            'Status': [''] * 11
-        })
-        
-        st.dataframe(course_rubric, use_container_width=True, hide_index=True)
-        
-        st.metric("Course Total", "125/125", delta="Perfect Score", delta_color="normal")
+    st.subheader("1. Data Collection & Cleaning")
+    st.markdown("""
+    - **Source:** Kaggle Sleep Health and Lifestyle Dataset
+    - **Size:** 374 observations × 13 baseline features
+    - **Quality Checks:**
+      * Zero duplicate records identified
+      * Missing value analysis: 58.6% in Sleep_Disorder column (informative missingness)
+      * Outlier detection using IQR method (outliers retained as clinically meaningful)
+      * Data type validation completed
+    """)
     
-    # TAB 3: GitHub
-    with tab3:
-        st.header("GitHub Repository")
-        
-        st.markdown("""
-        ### Project Repository
-        
-        **Repository:** [Sleep Health Analysis](https://github.com/Yashwitha-7/sleep-health-analysis)
-        
-        **Contents:**
-        - Complete Jupyter notebook with all 53 cells
-        - Streamlit application code (app.py)
-        - Dataset (Sleep_health_and_lifestyle_dataset.csv)
-        - Requirements.txt with all dependencies
-        - README.md with project documentation
-        - Models directory with saved .pkl files
-        - Data directory with processed datasets
-        - Artifacts directory with encoder mappings
-        
-        **Commit History:**
-        - Initial commit: Dataset and exploratory analysis
-        - Feature engineering implementation
-        - Model development and evaluation
-        - Advanced techniques implementation
-        - Streamlit application development
-        - Final documentation and polish
-        
-        **Branch Structure:**
-        - main: Production-ready code
-        - development: Work-in-progress features
-        - documentation: README and guides
-        """)
-        
-        st.info("Visit the repository for complete code, documentation, and version history.")
+    st.subheader("2. Exploratory Data Analysis")
+    st.markdown("""
+    - **Univariate Analysis:**
+      * Distribution analysis for all numerical variables
+      * Summary statistics (mean, median, std, min, max, quartiles)
+      * Identification of skewness and kurtosis
     
-    # TAB 4: References
-    with tab4:
-        st.header("References & Citations")
-        
-        st.markdown("""
-        ### Dataset
-        1. Sleep Health and Lifestyle Dataset. Kaggle. Available at: https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset
-        
-        ### Machine Learning Libraries
-        2. Pedregosa, F., et al. (2011). Scikit-learn: Machine Learning in Python. Journal of Machine Learning Research, 12, 2825-2830.
-        3. McKinney, W. (2010). Data Structures for Statistical Computing in Python. Proceedings of the 9th Python in Science Conference, 56-61.
-        4. Hunter, J. D. (2007). Matplotlib: A 2D Graphics Environment. Computing in Science & Engineering, 9(3), 90-95.
-        
-        ### Algorithms
-        5. Breiman, L. (2001). Random Forests. Machine Learning, 45(1), 5-32.
-        6. Friedman, J. H. (2001). Greedy function approximation: A gradient boosting machine. Annals of Statistics, 29(5), 1189-1232.
-        
-        ### Sleep Research
-        7. Buysse, D. J. (2014). Sleep health: can we define it? Does it matter? Sleep, 37(1), 9-17.
-        8. Cappuccio, F. P., et al. (2010). Sleep duration and all-cause mortality: a systematic review and meta-analysis of prospective studies. Sleep, 33(5), 585-592.
-        9. Watson, N. F., et al. (2015). Recommended Amount of Sleep for a Healthy Adult: A Joint Consensus Statement. Journal of Clinical Sleep Medicine, 11(6), 591-592.
-        10. Grandner, M. A. (2017). Sleep, Health, and Society. Sleep Medicine Clinics, 12(1), 1-22.
-        
-        ### Public Health
-        11. Centers for Disease Control and Prevention. (2020). Sleep and Sleep Disorders. U.S. Department of Health & Human Services.
-        12. American Academy of Sleep Medicine. (2014). International Classification of Sleep Disorders, 3rd ed. Darien, IL: American Academy of Sleep Medicine.
-        
-        ### Visualization
-        13. Waskom, M. (2021). seaborn: statistical data visualization. Journal of Open Source Software, 6(60), 3021.
-        14. Plotly Technologies Inc. (2015). Collaborative data science. Montreal, QC: Plotly Technologies Inc.
-        """)
-        
-        st.markdown("---")
-        
-        st.subheader("Project Information")
-        
-        col1, col2 = st.columns(2)
-        
-        with col1:
-            st.markdown("""
-            **Author:** Yashwitha Velamuru
-            
-            **Course:** CMSE 830 - Foundations of Data Science
-            
-            **Institution:** Michigan State University
-            
-            **Date:** December 2025
-            """)
-        
-        with col2:
-            st.markdown("""
-            **Application URL:** [Sleep Health Analysis App](https://sleep-health-analysis-yashwitha.streamlit.app/)
-            
-            **GitHub:** [Repository](https://github.com/Yashwitha-7/sleep-health-analysis)
-            
-            **Contact:** [Email](mailto:your.email@msu.edu)
-            """)
-        
-        st.markdown("---")
-        
-        st.info("""
-        **Academic Integrity Statement:**
-        
-        This project represents original work completed for CMSE 830. All data sources are properly cited. 
-        The analysis, code, and findings are the result of independent research and application of course concepts.
-        """)
-        
-        st.success("""
-        **Thank you for exploring the Sleep Health Analysis application!**
-        
-        This comprehensive project demonstrates:
-        - Complete data science pipeline from raw data to deployment
-        - Advanced machine learning with 10 models achieving 96% accuracy
-        - Interactive visualization and prediction capabilities
-        - Clinical-grade performance suitable for real-world applications
-        - Professional presentation meeting all rubric requirements
-        """)
+    - **Bivariate Analysis:**
+      * Correlation matrix for all numerical features
+      * Key findings: r(Sleep Duration, Quality) = 0.88, r(Stress, Quality) = -0.90
+      * Scatter plot matrices for key feature pairs
+    
+    - **Categorical Analysis:**
+      * Distribution of sleep disorders, BMI categories, occupations
+      * Cross-tabulations with target variables
+      * Chi-square tests for independence
+    
+    - **Statistical Testing:**
+      * ANOVA for group differences (F = 123.4, p < 0.001)
+      * Chi-square tests (χ² = 45.3 for BMI-Disorder association)
+      * T-tests for gender comparisons
+    """)
+    
+    st.subheader("3. Data Preprocessing")
+    st.markdown("""
+    **Encoding Strategies:**
+    - LabelEncoder for Gender (2 classes)
+    - LabelEncoder for Occupation (11 classes)
+    - LabelEncoder for BMI Category (3 classes)
+    - LabelEncoder for Sleep Disorder (3 classes)
+    - All mappings saved to encoder_mappings.json
+    
+    **Feature Engineering (8 new features):**
+    1. Systolic_BP: Extracted from Blood_Pressure
+    2. Diastolic_BP: Extracted from Blood_Pressure
+    3. Sleep_Efficiency: Sleep_Duration / Quality_of_Sleep
+    4. Activity_Stress_Ratio: Physical_Activity / (Stress + 1)
+    5. Sleep_Deficit: 8 - Sleep_Duration
+    6. Age_Group: Binned (Young Adult, Middle-Aged, Senior)
+    7. Activity_Category: Binned (Low, Moderate, High)
+    8. Stress_Category: Binned (Low, Moderate, High)
+    
+    **Scaling Methods (3 implemented):**
+    - StandardScaler: z = (x - μ) / σ
+    - MinMaxScaler: x_scaled = (x - min) / (max - min)
+    - RobustScaler: x_scaled = (x - median) / IQR
+    
+    **Imputation Techniques (3 demonstrated):**
+    - SimpleImputer: Mean-based univariate imputation
+    - KNNImputer: K=5 neighbors multivariate imputation
+    - IterativeImputer: MICE method multivariate imputation
+    """)
+    
+    st.subheader("4. Model Development")
+    st.markdown("""
+    **Regression Models (5 algorithms):**
+    1. Random Forest Regressor (n_estimators=100, max_depth=10)
+    2. Gradient Boosting Regressor (n_estimators=100, learning_rate=0.1)
+    3. Ridge Regression (alpha=1.0)
+    4. Support Vector Regressor (kernel='rbf')
+    5. Linear Regression (baseline)
+    
+    **Classification Models (5 algorithms):**
+    1. Random Forest Classifier (n_estimators=100)
+    2. Gradient Boosting Classifier (n_estimators=100)
+    3. Logistic Regression (multi_class='multinomial')
+    4. Support Vector Classifier (kernel='rbf')
+    5. K-Nearest Neighbors (n_neighbors=5)
+    
+    **Train-Test Split:**
+    - Split ratio: 80% train, 20% test
+    - Stratified sampling for classification
+    - Random state: 42 (reproducibility)
+    """)
+    
+    st.subheader("5. Advanced Techniques")
+    st.markdown("""
+    **Hyperparameter Optimization:**
+    - Method: GridSearchCV
+    - Cross-validation: 5-fold
+    - Parameters tuned: 5 (n_estimators, max_depth, min_samples_split, min_samples_leaf, max_features)
+    - Combinations tested: 216
+    - Best score achieved: 97.33%
+    
+    **Cross-Validation:**
+    - Method: Stratified K-Fold
+    - Number of folds: 10
+    - Scoring metric: Accuracy for classification, R² for regression
+    - Result: Low variance (SD = 1.34-2.01%)
+    
+    **Ensemble Methods:**
+    - Hard Voting Classifier: Majority vote (96.00% accuracy)
+    - Soft Voting Classifier: Probability averaging (96.67% accuracy)
+    
+    **Feature Importance:**
+    - Random Forest: Impurity-based importance
+    - Gradient Boosting: Gain-based importance
+    - Top 3 features: Stress Level (28.45%), Sleep Duration (26.12%), Physical Activity (18.34%)
+    
+    **Clustering:**
+    - Algorithm: K-Means
+    - Optimal clusters: 3 (determined by elbow method)
+    - Silhouette score: 0.58
+    - Distinct phenotypes identified: Healthy, At-Risk, High-Risk
+    
+    **Dimensionality Reduction:**
+    - PCA: 2 components, 47.3% variance explained
+    - t-SNE: Perplexity=30
+    """)
+    
+    st.subheader("6. Evaluation Metrics")
+    st.markdown("""
+    **Regression Metrics:**
+    - R² Score: Proportion of variance explained
+    - RMSE: Root Mean Squared Error
+    - MAE: Mean Absolute Error
+    - MSE: Mean Squared Error
+    
+    **Classification Metrics:**
+    - Accuracy: Overall correct predictions
+    - Precision: True positives / (True positives + False positives)
+    - Recall: True positives / (True positives + False negatives)
+    - F1-Score: Harmonic mean of precision and recall
+    - Confusion Matrix: Complete error analysis
+    """)
 
 print(" Complete Streamlit app created successfully!")
 print(" All 8 pages implemented with comprehensive functionality")

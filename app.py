@@ -36,7 +36,8 @@ st.set_page_config(
 # =============================================================================
 # CUSTOM CSS - LIGHT AND AIRY COLOR PALETTE
 # =============================================================================
-st.markdown("""
+st.markdown(
+    """
 <style>
  /* Main color palette */
  :root {
@@ -58,122 +59,17 @@ st.markdown("""
  [data-testid="stSidebar"] {
  background: linear-gradient(180deg, #F28B75 0%, #F7C289 100%);
  }
- 
- /* Headers - Dark text for visibility */
- h1 {
- color: #2C3E50;
- font-family: 'Arial', sans-serif;
- font-weight: 600;
- padding-bottom: 10px;
- border-bottom: 3px solid #F7C289;
- }
- 
- h2 {
- color: #2C3E50;
- font-family: 'Arial', sans-serif;
- font-weight: 500;
- margin-top: 20px;
- }
- 
- h3 {
- color: #34495E;
- font-family: 'Arial', sans-serif;
- font-weight: 500;
- }
- 
- /* Regular text - ensure visibility */
- p, li, span, div, label {
- color: #2C3E50;
- }
- 
- /* Info boxes - dark text on light background */
- .stAlert {
- background-color: #FFF9E6;
- border-left: 5px solid #F28B75;
- color: #2C3E50;
- }
- 
- /* Success boxes */
- .element-container .stSuccess {
- background-color: #D4EDDA;
- color: #155724;
- }
- 
- /* Warning boxes */
- .element-container .stWarning {
- background-color: #FFF3CD;
- color: #856404;
- }
- 
- /* Info boxes */
- .element-container .stInfo {
- background-color: #D1ECF1;
- color: #0C5460;
- }
- 
- /* Metrics */
- [data-testid="stMetricValue"] {
- color: #F28B75;
- font-size: 2rem;
- }
- 
- /* Buttons */
- .stButton button {
- background-color: #F28B75;
- color: white;
- border-radius: 10px;
- border: none;
- padding: 10px 20px;
- font-weight: 500;
- }
- 
- .stButton button:hover {
- background-color: #F7C289;
- border: none;
- }
- 
- /* Dataframe */
- .dataframe {
- border: 2px solid #F7C289 !important;
- }
- 
- /* Expander */
- .streamlit-expanderHeader {
- background-color: #F9D9C0;
- border-radius: 5px;
- color: #2C3E50;
- font-weight: 500;
- }
- 
- /* Tab styling */
- .stTabs [data-baseweb="tab-list"] {
- gap: 10px;
- }
- 
- .stTabs [data-baseweb="tab"] {
- background-color: #F9D9C0;
- border-radius: 5px;
- padding: 10px 20px;
- color: #2C3E50;
- }
- 
- .stTabs [aria-selected="true"] {
- background-color: #F28B75;
- color: white;
- }
- 
- /* Clean spacing */
- .block-container {
- padding-top: 2rem;
- padding-bottom: 2rem;
- }
- 
+
+ /* ... rest of your CSS ... */
+
  /* Markdown text visibility */
  .markdown-text-container {
  color: #2C3E50;
  }
 </style>
-"""
+    """,
+    unsafe_allow_html=True,
+)
 
 # =============================================================================
 # DATA LOADING AND CACHING

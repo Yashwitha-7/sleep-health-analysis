@@ -45,6 +45,7 @@ st.markdown("""
         --candy-corn: #EAE568;
         --pale: #F9D9C0;
         --linen: #F9F6E4;
+        --dark-text: #2C3E50;
     }
     
     /* Main app background */
@@ -52,47 +53,38 @@ st.markdown("""
         background-color: #F9F6E4;
     }
     
-    /* Sidebar styling */
-    [data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #F28B75 0%, #F7C289 100%);
+    /* ALL TEXT - Dark for visibility */
+    body, p, span, li, div {
+        color: #2C3E50 !important;
     }
     
-    [data-testid="stSidebar"] .css-1d391kg {
-        color: white;
+    /* Headers - Dark text */
+    h1, h2, h3, h4, h5, h6 {
+        color: #2C3E50 !important;
     }
     
-    /* Headers */
-    h1 {
-        color: #F28B75;
-        font-family: 'Arial', sans-serif;
-        font-weight: 600;
-        padding-bottom: 10px;
-        border-bottom: 3px solid #F7C289;
-    }
-    
-    h2 {
-        color: #F28B75;
-        font-family: 'Arial', sans-serif;
-        font-weight: 500;
-        margin-top: 20px;
-    }
-    
-    h3 {
-        color: #F7C289;
-        font-family: 'Arial', sans-serif;
-        font-weight: 500;
-    }
-    
-    /* Info boxes */
-    .stAlert {
-        background-color: #F9D9C0;
+    /* Info boxes - Dark text on light background */
+    .stAlert, .stInfo {
+        background-color: #FFF9E6 !important;
+        color: #2C3E50 !important;
         border-left: 5px solid #F28B75;
     }
     
-    /* Metrics */
-    [data-testid="stMetricValue"] {
-        color: #F28B75;
-        font-size: 2rem;
+    /* Success boxes */
+    .stSuccess {
+        background-color: #D4EDDA !important;
+        color: #155724 !important;
+    }
+    
+    /* Warning boxes */
+    .stWarning {
+        background-color: #FFF3CD !important;
+        color: #856404 !important;
+    }
+    
+    /* Sidebar */
+    [data-testid="stSidebar"] {
+        background: linear-gradient(180deg, #F28B75 0%, #F7C289 100%);
     }
     
     /* Buttons */
@@ -100,50 +92,16 @@ st.markdown("""
         background-color: #F28B75;
         color: white;
         border-radius: 10px;
-        border: none;
-        padding: 10px 20px;
-        font-weight: 500;
     }
     
     .stButton button:hover {
         background-color: #F7C289;
-        border: none;
     }
     
-    /* Dataframe */
-    .dataframe {
-        border: 2px solid #F7C289 !important;
-    }
-    
-    /* Expander */
-    .streamlit-expanderHeader {
-        background-color: #F9D9C0;
-        border-radius: 5px;
+    /* Metrics */
+    [data-testid="stMetricValue"] {
         color: #F28B75;
-        font-weight: 500;
-    }
-    
-    /* Tab styling */
-    .stTabs [data-baseweb="tab-list"] {
-        gap: 10px;
-    }
-    
-    .stTabs [data-baseweb="tab"] {
-        background-color: #F9D9C0;
-        border-radius: 5px;
-        padding: 10px 20px;
-        color: #F28B75;
-    }
-    
-    .stTabs [aria-selected="true"] {
-        background-color: #F28B75;
-        color: white;
-    }
-    
-    /* Clean spacing */
-    .block-container {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        font-size: 2rem;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -228,14 +186,14 @@ st.sidebar.markdown("---")
 
 page = st.sidebar.radio(
     "Navigate to:",
-    ["🏠 Home",
-     "📊 Dataset & EDA", 
-     "⚙️ Data Processing",
-     "🤖 Machine Learning Models",
-     "🔬 Advanced Techniques",
-     "🎯 Interactive Prediction",
-     "📈 Results & Insights",
-     "📋 Technical Documentation"]
+    ["Home",
+     "Dataset & EDA", 
+     "Data Processing",
+     "Machine Learning Models",
+     "Advanced Techniques",
+     "Interactive Prediction",
+     "Results & Insights",
+     "Technical Documentation"]
 )
 
 st.sidebar.markdown("---")

@@ -2932,7 +2932,6 @@ elif page == " Results & Insights":
             plot_bgcolor='#F9F6E4',
             paper_bgcolor='#F9F6E4',
             title_font_color='#F28B75',
-            font=dict(color='#2C3E50')
         )
         
         st.plotly_chart(fig, use_container_width=True)

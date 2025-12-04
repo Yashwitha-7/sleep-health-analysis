@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
-import plotly.io as pio
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import seaborn as sns
@@ -23,22 +22,6 @@ from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 import warnings
 warnings.filterwarnings('ignore')
-
-# Configure default Plotly styling for dark, visible text
-pio.templates.default = "plotly_white"
-pio.templates["plotly_white"].layout.font.color = "#2C3E50"
-pio.templates["plotly_white"].layout.font.size = 12
-pio.templates["plotly_white"].layout.title.font.size = 16
-pio.templates["plotly_white"].layout.title.font.color = "#2C3E50"
-pio.templates["plotly_white"].layout.xaxis.title.font.color = "#2C3E50"
-pio.templates["plotly_white"].layout.xaxis.title.font.size = 14
-pio.templates["plotly_white"].layout.xaxis.tickfont.color = "#2C3E50"
-pio.templates["plotly_white"].layout.xaxis.tickfont.size = 12
-pio.templates["plotly_white"].layout.yaxis.title.font.color = "#2C3E50"
-pio.templates["plotly_white"].layout.yaxis.title.font.size = 14
-pio.templates["plotly_white"].layout.yaxis.tickfont.color = "#2C3E50"
-pio.templates["plotly_white"].layout.yaxis.tickfont.size = 12
-
 
 # =============================================================================
 # PAGE CONFIGURATION

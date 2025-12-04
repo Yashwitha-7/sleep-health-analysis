@@ -2500,7 +2500,6 @@ elif page == " Interactive Prediction":
                 margin=dict(l=0, r=0, t=0, b=0),
                 plot_bgcolor='#F9F6E4',
                 paper_bgcolor='#F9F6E4',
-            font=dict(color='#2C3E50')
             )
             st.plotly_chart(fig, use_container_width=True)
         

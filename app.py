@@ -87,11 +87,6 @@ st.markdown("""
     .stAlert {
         background-color: #F9D9C0;
         border-left: 5px solid #F28B75;
-        color: #2C3E50 !important;
-    }
-    
-    .stAlert p, .stAlert div, .stAlert span {
-        color: #2C3E50 !important;
     }
     
     /* Metrics */
@@ -124,17 +119,8 @@ st.markdown("""
     .streamlit-expanderHeader {
         background-color: #F9D9C0;
         border-radius: 5px;
-        color: #2C3E50 !important;
-        font-weight: 600;
-    }
-    
-    .streamlit-expanderContent {
-        background-color: #FFFEF7;
-        color: #2C3E50 !important;
-    }
-    
-    .streamlit-expanderContent p, .streamlit-expanderContent div {
-        color: #2C3E50 !important;
+        color: #F28B75;
+        font-weight: 500;
     }
     
     /* Tab styling */
@@ -146,13 +132,12 @@ st.markdown("""
         background-color: #F9D9C0;
         border-radius: 5px;
         padding: 10px 20px;
-        color: #2C3E50 !important;
-        font-weight: 500;
+        color: #F28B75;
     }
     
     .stTabs [aria-selected="true"] {
         background-color: #F28B75;
-        color: white !important;
+        color: white;
     }
     
     /* Clean spacing */
@@ -161,58 +146,21 @@ st.markdown("""
         padding-bottom: 2rem;
     }
     
-    /* Improve general text visibility */
-    p, li, span, div {
-        color: #2C3E50;
+    /* Fix text visibility ONLY in colored message boxes (success/info/warning/error) */
+    .stSuccess, .stSuccess p, .stSuccess div, .stSuccess span, .stSuccess li {
+        color: #1e4620 !important;
     }
     
-    /* Markdown text */
-    .stMarkdown {
-        color: #2C3E50;
+    .stInfo, .stInfo p, .stInfo div, .stInfo span, .stInfo li {
+        color: #1e4620 !important;
     }
     
-    /* Text input and text area */
-    .stTextInput input, .stTextArea textarea {
-        color: #2C3E50 !important;
-        background-color: white !important;
+    .stWarning, .stWarning p, .stWarning div, .stWarning span, .stWarning li {
+        color: #664d03 !important;
     }
     
-    /* Select boxes */
-    .stSelectbox select {
-        color: #2C3E50 !important;
-        background-color: white !important;
-    }
-    
-    /* Multiselect */
-    .stMultiSelect [data-baseweb="tag"] {
-        background-color: #F28B75 !important;
-        color: white !important;
-    }
-    
-    /* Dataframe text */
-    .dataframe tbody tr td {
-        color: #2C3E50 !important;
-    }
-    
-    .dataframe thead tr th {
-        color: #2C3E50 !important;
-        background-color: #F9D9C0 !important;
-        font-weight: 600;
-    }
-    
-    /* Code blocks */
-    code {
-        color: #C7254E !important;
-        background-color: #F9F2F4 !important;
-    }
-    
-    /* Success/warning/error messages text */
-    .stSuccess, .stWarning, .stError, .stInfo {
-        color: #2C3E50 !important;
-    }
-    
-    .stSuccess p, .stWarning p, .stError p, .stInfo p {
-        color: #2C3E50 !important;
+    .stError, .stError p, .stError div, .stError span, .stError li {
+        color: #58151c !important;
     }
 </style>
 """, unsafe_allow_html=True)

@@ -1410,7 +1410,7 @@ elif page == " Machine Learning Models":
     
     tab1, tab2, tab3, tab4 = st.tabs([
         " Regression Models",
-        "🟢 Classification Models",
+        " Classification Models",
         " Model Comparison",
         " Validation Results"
     ])

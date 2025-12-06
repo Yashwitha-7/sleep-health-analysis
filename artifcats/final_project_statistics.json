@@ -1,0 +1,27 @@
+{
+  "project_metadata": {
+    "student": "Yashwitha Velamuru",
+    "course": "CMSE 830",
+    "date_completed": "2025-12-03",
+    "total_cells_executed": 51
+  },
+  "dataset_statistics": {
+    "total_observations": 374,
+    "original_features": 13,
+    "final_features": 26,
+    "engineered_features": 13
+  },
+  "model_performance": {
+    "best_regression_model": "Gradient Boosting",
+    "best_regression_r2": 0.9999999992633919,
+    "best_classification_model": "Random Forest",
+    "best_classification_accuracy": 0.96,
+    "total_models_trained": 9
+  },
+  "advanced_techniques": {
+    "hyperparameter_tuning_improvement": 0.01333333333333342,
+    "ensemble_best_accuracy": 0.96,
+    "optimal_clusters": 9,
+    "pca_variance_explained": 0.6473451245787765
+  }
+}

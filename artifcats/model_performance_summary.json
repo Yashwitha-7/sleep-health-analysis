@@ -1,0 +1,78 @@
+{
+  "regression_results": [
+    {
+      "Model": "Gradient Boosting",
+      "MSE": 1.1112633312585684e-09,
+      "RMSE": 3.3335616557348516e-05,
+      "MAE": 2.885213447044066e-05,
+      "R\u00b2 Score": 0.9999999992633919
+    },
+    {
+      "Model": "Random Forest",
+      "MSE": 0.0004893333333333316,
+      "RMSE": 0.02212088003071604,
+      "MAE": 0.0038666666666666554,
+      "R\u00b2 Score": 0.9996756422342682
+    },
+    {
+      "Model": "Ridge Regression",
+      "MSE": 0.00784988959205255,
+      "RMSE": 0.0885996026630625,
+      "MAE": 0.054825851288182396,
+      "R\u00b2 Score": 0.994796649899211
+    },
+    {
+      "Model": "Support Vector Regressor",
+      "MSE": 0.04140815342466972,
+      "RMSE": 0.20348993445541655,
+      "MAE": 0.093211038749827,
+      "R\u00b2 Score": 0.9725523376132728
+    }
+  ],
+  "classification_results": [
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.96,
+      "Precision": 0.9616666666666667,
+      "Recall": 0.96,
+      "F1-Score": 0.9605685329378321
+    },
+    {
+      "Model": "Gradient Boosting",
+      "Accuracy": 0.96,
+      "Precision": 0.9616666666666667,
+      "Recall": 0.96,
+      "F1-Score": 0.9605685329378321
+    },
+    {
+      "Model": "Support Vector Classifier",
+      "Accuracy": 0.96,
+      "Precision": 0.962010582010582,
+      "Recall": 0.96,
+      "F1-Score": 0.960018030200586
+    },
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.9466666666666667,
+      "Precision": 0.9496296296296297,
+      "Recall": 0.9466666666666667,
+      "F1-Score": 0.947140902872777
+    },
+    {
+      "Model": "K-Nearest Neighbors",
+      "Accuracy": 0.9466666666666667,
+      "Precision": 0.9482352941176472,
+      "Recall": 0.9466666666666667,
+      "F1-Score": 0.9471960989202368
+    }
+  ],
+  "best_regression_model": "Gradient Boosting",
+  "best_classification_model": "Random Forest",
+  "best_regression_r2": 0.9999999992633919,
+  "best_classification_accuracy": 0.96,
+  "hyperparameter_tuning_improvement": 0.01333333333333342,
+  "ensemble_voting_hard_accuracy": 0.96,
+  "ensemble_voting_soft_accuracy": 0.96,
+  "optimal_clusters": 9,
+  "cluster_silhouette_score": 0.6292373371314409
+}

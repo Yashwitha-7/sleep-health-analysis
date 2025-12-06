@@ -263,7 +263,7 @@ if page == " Home":
     st.warning("""
     **Important:** For the best viewing experience, please use this app in **Light Mode**.  
     The color scheme and visualizations are optimized for light backgrounds. 
-    If you're in dark mode, toggle to light mode in Streamlit settings (☰ → Settings → Theme → Light).
+    If you're in dark mode, toggle to light mode in Streamlit settings.
     """)
     
     st.markdown("""

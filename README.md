@@ -914,20 +914,16 @@ All random processes use `random_state=42` for reproducibility:
 ### Core Libraries
 
 ```
-streamlit>=1.28.0
-pandas>=2.0.0
-numpy>=1.24.0
-scikit-learn>=1.3.0
-plotly>=5.17.0
-seaborn>=0.12.0
-matplotlib>=3.7.0
-scipy>=1.11.0
-joblib>=1.3.0
+streamlit
+pandas
+numpy
+scikit-learn
+plotly
+seaborn
+matplotlib
+scipy
+joblib
 ```
-
-### Complete Requirements
-
-See `requirements.txt` for full dependency list with specific versions.
 
 **Installation:**
 ```bash
@@ -950,7 +946,7 @@ streamlit run app.py
 http://localhost:8501
 ```
 
-**Important:** Use Light Mode for optimal viewing (Settings → Theme → Light)
+**Important:** Use Light Mode for optimal viewing
 
 ### Jupyter Notebook Analysis
 
@@ -1117,13 +1113,6 @@ If you use this work in your research, please cite:
 }
 ```
 
-**APA Format:**
-```
-Velamuru, S. Y. R. (2025). Sleep Health Analysis: Comprehensive Data Science Project. 
-CMSE 830 - Foundations of Data Science, Michigan State University. 
-Retrieved from https://github.com/Yashwitha-7/sleep-health-analysis
-```
-
 ---
 
 ## License
@@ -1142,7 +1131,7 @@ This project is part of academic coursework for CMSE 830 at Michigan State Unive
 **Institution:** Michigan State University  
 **Department:** Computational Mathematics, Science and Engineering  
 **Course:** CMSE 830 - Foundations of Data Science  
-**Instructor:** Dr. Dirk Colbry
+**Instructor:** Dr. Luciano Germano Silvestri
 
 **Project Links:**
 - **GitHub Repository:** [https://github.com/Yashwitha-7/sleep-health-analysis](https://github.com/Yashwitha-7/sleep-health-analysis)
@@ -1154,7 +1143,7 @@ This project is part of academic coursework for CMSE 830 at Michigan State Unive
 ## Acknowledgments
 
 **Course Instructor:**
-- Dr. Dirk Colbry, Michigan State University
+- Dr. Luciano Germano Silvestri, Michigan State University
 
 **Dataset:**
 - Sleep Health and Lifestyle Dataset (Kaggle)
@@ -1186,31 +1175,6 @@ This project is part of academic coursework for CMSE 830 at Michigan State Unive
 
 ---
 
-## Project Statistics
-
-**Code Metrics:**
-- Jupyter Notebook: 50+ cells, ~2,000 lines of code
-- Streamlit Application: 3,400+ lines of code
-- Total Models Trained: 10+ (including tuned and ensemble variants)
-- Total Visualizations: 40+ interactive charts
-- Total Files Generated: 34+ files
-
-**Performance Metrics:**
-- Best Regression R²: 0.8947
-- Best Classification Accuracy: 96.67%
-- Cross-Validation Stability: 1.34% std dev
-- Feature Importance Coverage: 99%+ (top 10 features)
-- Clustering Silhouette Score: 0.58
-
-**Dataset Metrics:**
-- Total Observations: 374
-- Original Features: 13
-- Engineered Features: 8
-- Total Features: 22
-- Missing Values: 0
-- Duplicate Records: 0
-
----
 
 *Last Updated: December 6, 2025*  
 *Documentation Version: 1.0*  

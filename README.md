@@ -55,7 +55,7 @@ This comprehensive data science project analyzes sleep health patterns and devel
 
 **Deployed Application:** [https://sleep-health-analysis-yashwitha.streamlit.app/](https://sleep-health-analysis-yashwitha.streamlit.app/)
 
-**Important Note:** For optimal viewing experience, use the application in **Light Mode**. The color scheme and visualizations are optimized for light backgrounds. To change theme: Settings (☰) → Theme → Light.
+**Important Note:** For optimal viewing experience, use the application in **Light Mode**. The color scheme and visualizations are optimized for light backgrounds.
 
 ---
 

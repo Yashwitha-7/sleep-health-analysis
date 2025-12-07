@@ -1127,7 +1127,7 @@ This project is part of academic coursework for CMSE 830 at Michigan State Unive
 ## Contact
 
 **Author:** Sai Yashwitha Reddy Velamuru  
-**Email:** velamur1@msu.edu  
+**Email:** velamuru@msu.edu  
 **Institution:** Michigan State University  
 **Department:** Computational Mathematics, Science and Engineering  
 **Course:** CMSE 830 - Foundations of Data Science  
